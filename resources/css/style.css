@@ -49,9 +49,15 @@ a:link {
   color: black;
 }
 
-.main.content {
-  display: inline-flex;
+.main-content {
+  display: flex;
   padding-top: 100px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: right: 32px;
 }
 
   /* Formatting for the 1st column */
