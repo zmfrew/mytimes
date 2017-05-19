@@ -54,17 +54,20 @@ a:link {
   padding-top: 100px;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
   /* Formatting for the 1st column */
 .column.large {
   display: flex;
   width: 630px;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 20px 32px 0 0;
+}
+
+.image-container {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .mother.story {
@@ -93,6 +96,7 @@ a:link {
   font-weight: bold;
   font-family: Georgia;
   margin-top: 15px;
+  margin-right: 10px;
 }
 
 .hipster {
@@ -107,7 +111,7 @@ a:link {
   font-size: 30px;
   font-weight: bold;
   font-family: Georgia;
-  margin-top: 15px;
+  margin: 15px 10px 0 10px;
 }
 
 .stories {
@@ -115,6 +119,11 @@ a:link {
   font-size: 17px;
   color: black;
   font-family: Georgia;
+}
+
+.story.text {
+  display: flex;
+  flex-direction: column;
 }
 
 .story {
@@ -125,6 +134,7 @@ a:link {
   /* Formatting for the 2nd column */
 .column.medium {
   display: flex;
+  flex-direction: column;
   width: 300px;
   flex-wrap: wrap;
   margin: 20px 32px 0 0;
@@ -142,7 +152,7 @@ a:link {
   margin-top: 15px;
 }
 
-span div {
+h3 div {
   width: 100%;
   display: flex;
 }
@@ -150,6 +160,7 @@ span div {
   /* Formatting for the 3rd column */
 .column.small {
   display: flex;
+  flex-direction: column;
   width: 240px;
   margin: 20px 32px 0 0;
   flex-direction: column;
